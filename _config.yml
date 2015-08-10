@@ -1,0 +1,3 @@
+markdown: redcarpet
+baseurl: /spinoza
+exclude: ['README.md']
