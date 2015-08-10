@@ -1,4 +1,5 @@
 markdown: redcarpet
+title: Spinoza
 baseurl: /spinoza
 exclude: ['README.md']
 # Build settings
