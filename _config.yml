@@ -1,6 +1,7 @@
 markdown: redcarpet
 title: Spinoza
 baseurl: /spinoza
+pygments: true
 exclude: ['README.md']
 # Build settings
 markdown_ext:  markdown,mkdown,mkdn,mkd,md
