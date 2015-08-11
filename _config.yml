@@ -1,5 +1,5 @@
 # Site settings
-title: Spinoza site
+title: Spinoza
 baseurl: /spinoza
 exclude: ['README.md']
 # Build settings
