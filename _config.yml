@@ -3,5 +3,5 @@ title: Spinoza
 baseurl: /spinoza
 exclude: ['README.md']
 # Build settings
-markdown: redcarpet
+markdown: rdiscount
 markdown_ext:  markdown,mkdown,mkdn,mkd,md
