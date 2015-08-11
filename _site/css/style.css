@@ -1,7 +1,15 @@
 /***************** Custom CSS **************************/
+.left-sidebar{
+  border:1px solid red;
+  float:left;
+  width:200px;
+}
+.post{
+  float:left;
+  width:680px;
+}
 body{
-  background:gray !important;
-  color:red !important;
+  background:red !important;
 }
 h1{
   border:1px solid red;
