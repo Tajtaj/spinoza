@@ -1,12 +1,7 @@
 ---
 layout: default
 ---
-<div class="post">
-
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-  </header>
-  <div class="left-sidebar">
+ <div class="left-sidebar">
 	  <ul class="nav">
 		  <li class="active"><a href="#">Home</a></li>
 		  <li><a href="#">Link 1</a></li>
@@ -14,6 +9,11 @@ layout: default
 		  <li><a href="#">Link 3</a></li>              
 	  </ul>
   </div>
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+  </header>
   <article class="post-content">
     {{ content }}
   </article>
