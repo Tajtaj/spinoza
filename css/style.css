@@ -1,8 +1,4 @@
 /***************** Custom CSS **************************/
-body{
-  background:gray !important;
-  color:red !important;
-}
-h1{
+.left-sidebar{
   border:1px solid red;
 }
