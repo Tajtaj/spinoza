@@ -60,7 +60,7 @@ body {
   padding-top: 15px;
   text-align: center;
 }
-#sidebar li ul.nav.sub-menu li{
+#sidebar li ul.nav.sub-menu{
   border:1px solid red;
 }
 
