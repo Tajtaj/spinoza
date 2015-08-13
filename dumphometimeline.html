@@ -1,0 +1,86 @@
+---
+layout: twitter-swiss
+title: Dump Home TimeLine
+---
+      
+    <div class="container">
+      <div class="row row-offcanvas row-offcanvas-left">
+        
+        <!-- sidebar -->
+        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+          {% include left-sidebar.html %}
+        </div>
+  	
+        <!-- main area -->
+        <div class="col-xs-12 col-sm-9">
+          <h1>{{page.title}}</h1>
+          <div class="main_contents">
+			<div class="main_heading">
+				<div class="quicklinks">
+					<a href="commands.html">Commands</a> | <a href="dumphometimeline.html"> Dump Home TimeLine</a>
+				</div>
+ 				
+ 				<p class="tableofcntnt">Table of Contents</p>
+				
+				<ul class="maincntnts">
+					<li><a href="dumphometimeline.html">Dump Home TimeLine</a>
+
+						<ul class="maincntnts">
+							<li><a href="#1">Dump Home Timeline</a></li>
+						</ul>
+
+					</li>
+				</ul>
+				
+				<br><br>
+
+
+					<p class="ftnnames" id="1">Dump Home Timeline:</p>
+					<div class="ftns_desp code_decp">
+						<h4>LONG FORMAT</h4>
+						<p>Reads Twitter credentials directly from command line arguments.</p>
+					</div>
+					<div class="ftns_def">
+						<code>
+							java -jar TSAK.jar tsak -consumerKey=XXXX -consumerSecret=XXXX -accessToken=XXXX -accessSecret=XXXX dumpHomeTimeLine -o output.txt
+						</code>
+					</div>
+
+					<div class="ftns_desp code_decp">
+						<h4>SHORT FORMAT</h4>
+						<p>Reads Twitter credentials from tsak.properties file as pointed by TSAK_CONF ENV variable.</p>
+					</div>
+
+					<div class="ftns_def">
+						
+						<code>
+							java -jar TSAK.jar tsak dumpHomeTimeLine -o output.txt
+						</code>
+					</div>
+					
+					<div class="ftns_desp">
+						<h4>Arguments:</h4>
+
+						<h4>XXXX:</h4>
+						<p>Twitter APP and User Keys. Please refer to <b>SETUP</b> page to see how to generate these four keys.</p>
+
+						<h4>-o:</h4>
+						<p>Name of the output file to which the Home Timeline will be dumped.</p>
+
+						<h4>Description:</h4>
+						<p>Based on provided Credentials, this command dumps Home TimeLine (Based on Provided Twitter Keys) to a file. The number of dumped Tweets are subjected to Twitter rate limits and cannot exceeds 2700/15min.</p>
+					
+					</div>
+
+					<br><br><br>
+
+					
+
+
+			</div>
+		</div>
+          
+        </div><!-- /.col-xs-12 main -->
+    </div><!--/.row-->
+  </div><!--/.container-->
+ 
