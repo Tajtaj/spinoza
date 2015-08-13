@@ -6,23 +6,23 @@
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		<meta charset="utf-8">
-		<title>Dump Friends List</title>
+		<title>About TSAK</title>
 		<meta name="description" content="">
 		<meta name="generator" content="Bootply" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<link rel="shortcut icon" type="image/png" href="favicon.png"/>
 		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link rel="canonical" href="/dumpfriends.html">
-        <link rel="alternate" type="application/rss+xml" title="Spinoza" href="/feed.xml" />
+		<link rel="canonical" href="/spinoza/dumpfollowers/">
+        <link rel="alternate" type="application/rss+xml" title="Spinoza" href="/spinoza/feed.xml" />
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700' rel='stylesheet' type='text/css'>
 		<!--[if lt IE 9]>
 			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
-		<link rel="stylesheet" href="/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/spinoza/css/bootstrap.min.css">
 		<!-- <link href="css/styles.css" rel="stylesheet"> -->
-		<link rel="stylesheet" href="/css/styles.css">
+		<link rel="stylesheet" href="/spinoza/css/styles.css">
 	</head>
 		<body>
 <div class="page-container">
@@ -71,17 +71,16 @@
   	
         <!-- main area -->
         <div class="col-xs-12 col-sm-9">
-          <h1>Dump Friends List</h1>
-          <div class="main_contents">
-			<div class="main_heading">
+          <h1>About TSAK</h1>
+          <div class="main_heading">
 				<div class="quicklinks">
-					<a href="commands">Commands</a> | <a href="dumpfriends"> Dump Friends List</a>
+					<a href="commands">Commands</a> | <a href="dumpfollowers"> Dump Followers</a>
 				</div>
  				
  				<p class="tableofcntnt">Table of Contents</p>
 				
 				<ul class="maincntnts">
-					<li><a href="dumpfriends.html">Dump Friends List</a>
+					<li><a href="dumpfollowers.html">Dump Followers</a>
 
 						<ul class="maincntnts">
 							<li><a href="#1">Dump by Twitter Screen Name</a></li>
@@ -101,7 +100,7 @@
 					</div>
 					<div class="ftns_def">
 						<code>
-							java -jar TSAK.jar tsak -consumerKey=XXXX -consumerSecret=XXXX -accessToken=XXXX -accessSecret=XXXX dumpFriendIDs -uname ScreenName -o output.csv
+							java -jar TSAK.jar tsak -consumerKey=XXXX -consumerSecret=XXXX -accessToken=XXXX -accessSecret=XXXX dumpFollowerIDs -uname ScreenName -o output.csv
 						</code>
 					</div>
 
@@ -113,7 +112,7 @@
 					<div class="ftns_def">
 						
 						<code>
-							java -jar TSAK.jar tsak dumpFriendIDs -uname ScreenName -o output.csv
+							java -jar TSAK.jar tsak dumpFollowerIDs -uname ScreenName -o output.csv
 						</code>
 					</div>
 					
@@ -130,7 +129,7 @@
 						<p>Name of the output file to which the target user follower will be dumped.</p>
 
 						<h4>Description:</h4>
-						<p>Based on provided Credentials, this command dumps a twitter user's friends ids, ScreenName, followers count, and friends count to a file. The number of friends id, ScreenName, followers count, friends count are subjected to Twitter rate limits and cannot exceeds 75000/15min.</p>
+						<p>Based on provided Credentials, this command dumps a twitter user's followers ids, ScreenName, followers count, and friends count to a file. The number of followers are subjected to Twitter rate limits and cannot exceeds 75000/15min.</p>
 					
 					</div>
 
@@ -170,7 +169,7 @@
 						<p>Name of the output file to which the target user follower will be dumped.</p>
 
 						<h4>Description:</h4>
-						<p>Based on provided Credentials, this command dumps a twitter user's friends ids, ScreenName, followers count, and friends count to a file. The number of friends id, ScreenName, followers count, friends count are subjected to Twitter rate limits and cannot exceeds 75000/15min.</p>
+						<p>Based on provided Credentials, this command dumps a twitter user's followers ids, ScreenName, followers count, and friends count to a file. The number of followers are subjected to Twitter rate limits and cannot exceeds 75000/15min.</p>
 					</div>
 
 
@@ -181,7 +180,6 @@
 
 
 			</div>
-		</div>
           
         </div><!-- /.col-xs-12 main -->
     </div><!--/.row-->
