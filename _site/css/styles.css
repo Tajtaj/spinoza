@@ -61,6 +61,6 @@ body {
   text-align: center;
 }
 #sidebar li ul.nav.sub-menu{
-  border:1px solid red;
+  padding-left:10px;
 }
 
