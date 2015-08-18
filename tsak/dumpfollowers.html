@@ -1,6 +1,6 @@
 ---
 layout: twitter-swiss
-title: Dump Friends List
+title: About TSAK
 ---
 
 <div role="navigation" class="navbar-default sidebar">
@@ -20,16 +20,15 @@ title: Dump Friends List
 	</div>
 	<div class="row">
 		<div class="col-lg-12">
-		 <div class="main_contents">
-			<div class="main_heading">
+		 <div class="main_heading">
 				<div class="quicklinks">
-					<a href="commands">Commands</a> | <a href="dumpfriends"> Dump Friends List</a>
+					<a href="{{site.baseurl}}/tsak/commands">Commands</a> | <a href="{{site.baseurl}}/tsak/dumpfollowers"> Dump Followers</a>
 				</div>
  				
  				<p class="tableofcntnt">Table of Contents</p>
 				
 				<ul class="maincntnts">
-					<li><a href="dumpfriends">Dump Friends List</a>
+					<li><a href="dumpfollowers">Dump Followers</a>
 
 						<ul class="maincntnts">
 							<li><a href="#1">Dump by Twitter Screen Name</a></li>
@@ -49,7 +48,7 @@ title: Dump Friends List
 					</div>
 					<div class="ftns_def">
 						<code>
-							java -jar TSAK.jar tsak -consumerKey=XXXX -consumerSecret=XXXX -accessToken=XXXX -accessSecret=XXXX dumpFriendIDs -uname ScreenName -o output.csv
+							java -jar TSAK.jar tsak -consumerKey=XXXX -consumerSecret=XXXX -accessToken=XXXX -accessSecret=XXXX dumpFollowerIDs -uname ScreenName -o output.csv
 						</code>
 					</div>
 
@@ -61,7 +60,7 @@ title: Dump Friends List
 					<div class="ftns_def">
 						
 						<code>
-							java -jar TSAK.jar tsak dumpFriendIDs -uname ScreenName -o output.csv
+							java -jar TSAK.jar tsak dumpFollowerIDs -uname ScreenName -o output.csv
 						</code>
 					</div>
 					
@@ -78,7 +77,7 @@ title: Dump Friends List
 						<p>Name of the output file to which the target user follower will be dumped.</p>
 
 						<h4>Description:</h4>
-						<p>Based on provided Credentials, this command dumps a twitter user's friends ids, ScreenName, followers count, and friends count to a file. The number of friends id, ScreenName, followers count, friends count are subjected to Twitter rate limits and cannot exceeds 75000/15min.</p>
+						<p>Based on provided Credentials, this command dumps a twitter user's followers ids, ScreenName, followers count, and friends count to a file. The number of followers are subjected to Twitter rate limits and cannot exceeds 75000/15min.</p>
 					
 					</div>
 
@@ -118,7 +117,7 @@ title: Dump Friends List
 						<p>Name of the output file to which the target user follower will be dumped.</p>
 
 						<h4>Description:</h4>
-						<p>Based on provided Credentials, this command dumps a twitter user's friends ids, ScreenName, followers count, and friends count to a file. The number of friends id, ScreenName, followers count, friends count are subjected to Twitter rate limits and cannot exceeds 75000/15min.</p>
+						<p>Based on provided Credentials, this command dumps a twitter user's followers ids, ScreenName, followers count, and friends count to a file. The number of followers are subjected to Twitter rate limits and cannot exceeds 75000/15min.</p>
 					</div>
 
 
@@ -129,7 +128,6 @@ title: Dump Friends List
 
 
 			</div>
-		</div>
 		</div>
 	</div>
 	

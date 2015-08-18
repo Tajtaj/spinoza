@@ -8,7 +8,7 @@
     <meta charset="utf-8">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <title>About TSAK</title>
+    <title>Dump Home TimeLine</title>
     <link rel="shortcut icon" type="image/png" href="favicon.png"/>
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/assets/bootstrap/dist/css/bootstrap.min.css">
@@ -97,25 +97,25 @@
 <div id="page-wrapper" style="min-height: 389px;">
 	<div class="row">
 		<div class="col-lg-12">
-			<h1 class="page-header">About TSAK</h1>
+			<h1 class="page-header">Dump Home TimeLine</h1>
 		</div>
 		<!-- /.col-lg-12 -->
 	</div>
 	<div class="row">
 		<div class="col-lg-12">
-		 <div class="main_heading">
+		 <div class="main_contents">
+			<div class="main_heading">
 				<div class="quicklinks">
-					<a href="commands">Commands</a> | <a href="dumpfollowers"> Dump Followers</a>
+					<a href="/tsak/commands">Commands</a> | <a href="/tsak/dumphometimeline"> Dump Home TimeLine</a>
 				</div>
  				
  				<p class="tableofcntnt">Table of Contents</p>
 				
 				<ul class="maincntnts">
-					<li><a href="dumpfollowers">Dump Followers</a>
+					<li><a href="dumphometimeline">Dump Home TimeLine</a>
 
 						<ul class="maincntnts">
-							<li><a href="#1">Dump by Twitter Screen Name</a></li>
-							<li><a href="#2">Dump by Twitter ID</a></li>
+							<li><a href="#1">Dump Home Timeline</a></li>
 						</ul>
 
 					</li>
@@ -124,14 +124,14 @@
 				<br><br>
 
 
-					<p class="ftnnames" id="1">Dump by Twitter Screen Name:</p>
+					<p class="ftnnames" id="1">Dump Home Timeline:</p>
 					<div class="ftns_desp code_decp">
 						<h4>LONG FORMAT</h4>
 						<p>Reads Twitter credentials directly from command line arguments.</p>
 					</div>
 					<div class="ftns_def">
 						<code>
-							java -jar TSAK.jar tsak -consumerKey=XXXX -consumerSecret=XXXX -accessToken=XXXX -accessSecret=XXXX dumpFollowerIDs -uname ScreenName -o output.csv
+							java -jar TSAK.jar tsak -consumerKey=XXXX -consumerSecret=XXXX -accessToken=XXXX -accessSecret=XXXX dumpHomeTimeLine -o output.txt
 						</code>
 					</div>
 
@@ -143,7 +143,7 @@
 					<div class="ftns_def">
 						
 						<code>
-							java -jar TSAK.jar tsak dumpFollowerIDs -uname ScreenName -o output.csv
+							java -jar TSAK.jar tsak dumpHomeTimeLine -o output.txt
 						</code>
 					</div>
 					
@@ -153,57 +153,13 @@
 						<h4>XXXX:</h4>
 						<p>Twitter APP and User Keys. Please refer to <b>SETUP</b> page to see how to generate these four keys.</p>
 
-						<h4>-uname:</h4>
-						<p>Target User Twitter ScreenName.</p>
-
 						<h4>-o:</h4>
-						<p>Name of the output file to which the target user follower will be dumped.</p>
+						<p>Name of the output file to which the Home Timeline will be dumped.</p>
 
 						<h4>Description:</h4>
-						<p>Based on provided Credentials, this command dumps a twitter user's followers ids, ScreenName, followers count, and friends count to a file. The number of followers are subjected to Twitter rate limits and cannot exceeds 75000/15min.</p>
+						<p>Based on provided Credentials, this command dumps Home TimeLine (Based on Provided Twitter Keys) to a file. The number of dumped Tweets are subjected to Twitter rate limits and cannot exceeds 2700/15min.</p>
 					
 					</div>
-
-					<br><br><br>
-
-					<p class="ftnnames" id="2">Dump by Twitter ID:</p>
-					<div class="ftns_desp code_decp">
-						<h4>LONG FORMAT</h4>
-						<p>Reads Twitter credentials directly from command line arguments.</p>
-					</div>
-					<div class="ftns_def">
-						<code>
-							java -jar TSAK.jar tsak -consumerKey=XXXX -consumerSecret=XXXX -accessToken=XXXX -accessSecret=XXXX dumpFollowerIDs -uid 101010111 -o output.csv
-						</code>
-					</div>
-
-					<div class="ftns_desp code_decp">
-						<h4>SHORT FORMAT</h4>
-						<p>Reads Twitter credentials from tsak.properties file as pointed by TSAK_CONF ENV variable.</p>
-					</div>
-
-					<div class="ftns_def">
-						
-						<code>
-							java -jar TSAK.jar tsak dumpFollowerIDs -uid 101010111 -o output.csv
-						</code>
-					</div>
-					
-					<div class="ftns_desp">
-						<h4>XXXX:</h4>
-						<p>Twitter APP and User Keys. Please refer to <b>SETUP</b> page to see how to generate these four keys.</p>
-
-						<h4>-uid:</h4>
-						<p>Target User's Twitter ID.</p>
-
-						<h4>-o:</h4>
-						<p>Name of the output file to which the target user follower will be dumped.</p>
-
-						<h4>Description:</h4>
-						<p>Based on provided Credentials, this command dumps a twitter user's followers ids, ScreenName, followers count, and friends count to a file. The number of followers are subjected to Twitter rate limits and cannot exceeds 75000/15min.</p>
-					</div>
-
-
 
 					<br><br><br>
 
@@ -211,6 +167,7 @@
 
 
 			</div>
+		</div>
 		</div>
 	</div>
 	
