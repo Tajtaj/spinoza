@@ -71,7 +71,7 @@
 		<a href="#">Twitter Swiss Army<span class="fa arrow"></span></a>
 		<ul class="nav nav-second-level collapse" aria-expanded="false" style="height: 0px;">
 			<li>
-				<a href="tsak-home">Swiss home</a>
+				<a href="tsak/swiss-home">Swiss home</a>
 			</li>
 			<li>
 				<a href="setup">Setup</a>
@@ -106,16 +106,17 @@
 		 <div class="main_contents">
 			<div class="main_heading">
 				<div class="quicklinks">
-					<a href="commands">Commands</a> | <a href="searchtweets"> Search Tweets</a>
+					<a href="commands">Commands</a> | <a href="dumpusertimeline"> Dump User TimeLine</a>
 				</div>
  				
  				<p class="tableofcntnt">Table of Contents</p>
 				
 				<ul class="maincntnts">
-					<li><a href="searchtweets.html">Search Tweets</a>
+					<li><a href="dumpfollowers">Dump User TimeLine</a>
 
 						<ul class="maincntnts">
-							<li><a href="#1">Search by Keywords</a></li>
+							<li><a href="#1">Dump by Twitter Screen Name</a></li>
+							<li><a href="#2">Dump by Twitter ID</a></li>
 						</ul>
 
 					</li>
@@ -124,14 +125,14 @@
 				<br><br>
 
 
-				<p class="ftnnames" id="1">Search by Keywords:</p>
+					<p class="ftnnames" id="1">Dump by Twitter Screen Name:</p>
 					<div class="ftns_desp code_decp">
 						<h4>LONG FORMAT</h4>
 						<p>Reads Twitter credentials directly from command line arguments.</p>
 					</div>
 					<div class="ftns_def">
 						<code>
-							java -jar TSAK.jar tsak -consumerKey=XXXX -consumerSecret=XXXX -accessToken=XXXX -accessSecret=XXXX dumpTweets -keywords "KEY words" -o output.txt
+							java -jar TSAK.jar tsak -consumerKey=XXXX -consumerSecret=XXXX -accessToken=XXXX -accessSecret=XXXX dumpFollowerIDs -uname ScreenName -o output.txt
 						</code>
 					</div>
 
@@ -143,7 +144,7 @@
 					<div class="ftns_def">
 						
 						<code>
-							java -jar TSAK.jar tsak dumpTweets -keywords "KEY words" -o output.txt
+							java -jar TSAK.jar tsak dumpFollowerIDs -uname ScreenName -o output.txt
 						</code>
 					</div>
 					
@@ -153,18 +154,62 @@
 						<h4>XXXX:</h4>
 						<p>Twitter APP and User Keys. Please refer to <b>SETUP</b> page to see how to generate these four keys.</p>
 
-						<h4>-keywords:</h4>
-						<p>Search tweets containing these keywords</p>
+						<h4>-uname:</h4>
+						<p>Target User Twitter ScreenName.</p>
 
 						<h4>-o:</h4>
-						<p>Name of the output file to which the searched Tweets will be dumped.</p>
+						<p>Name of the output file to which the target user's Statuses will be dumped.</p>
 
 						<h4>Description:</h4>
-						<p>Based on provided Credentials, this command dumps searched Tweets containing the provided keywords to a file. The number of dumped Tweets are subjected to Twitter rate limits and cannot exceeds 2700/15min.</p>
+						<p>Based on provided Credentials, this command dumps a twitter user's Statuses to a file. The number of dumped Tweets are subjected to Twitter rate limits and cannot exceeds 2700/15min.</p>
 					
 					</div>
 
 					<br><br><br>
+
+					<p class="ftnnames" id="2">Dump by Twitter ID:</p>
+					<div class="ftns_desp code_decp">
+						<h4>LONG FORMAT</h4>
+						<p>Reads Twitter credentials directly from command line arguments.</p>
+					</div>
+					<div class="ftns_def">
+						<code>
+							java -jar TSAK.jar tsak -consumerKey=XXXX -consumerSecret=XXXX -accessToken=XXXX -accessSecret=XXXX dumpFollowerIDs -uid 101010111 -o output.txt
+						</code>
+					</div>
+
+					<div class="ftns_desp code_decp">
+						<h4>SHORT FORMAT</h4>
+						<p>Reads Twitter credentials from tsak.properties file as pointed by TSAK_CONF ENV variable.</p>
+					</div>
+
+					<div class="ftns_def">
+						
+						<code>
+							java -jar TSAK.jar tsak dumpFollowerIDs -uid 101010111 -o output.txt
+						</code>
+					</div>
+					
+					<div class="ftns_desp">
+						<h4>XXXX:</h4>
+						<p>Twitter APP and User Keys. Please refer to <b>SETUP</b> page to see how to generate these four keys.</p>
+
+						<h4>-uid:</h4>
+						<p>Target User's Twitter ID.</p>
+
+						<h4>-o:</h4>
+						<p>Name of the output file to which the target user's Statuses will be dumped.</p>
+
+						<h4>Description:</h4>
+						<p>Based on provided Credentials, this command dumps a twitter user's Statuses to a file. The number of dumped Tweets are subjected to Twitter rate limits and cannot exceeds 2700/15min.</p>
+					</div>
+
+
+
+					<br><br><br>
+
+					
+
 
 			</div>
 		</div>
@@ -172,6 +217,7 @@
 	</div>
 	
 </div>
+ 
       </div>
     </div>
 
