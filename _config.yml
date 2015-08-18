@@ -2,6 +2,7 @@
 title: Spinoza
 baseurl: /spinoza
 exclude: ['README.md']
+permalink: none
 # Build settings
 markdown: rdiscount
 markdown_ext:  markdown,mkdown,mkdn,mkd,md
