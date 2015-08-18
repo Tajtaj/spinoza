@@ -1,1 +1,2 @@
-# spinoza
+# responsive
+A responsive theme
