@@ -1,6 +1,6 @@
 ---
 layout: twitter-swiss
-title: Dump Followers
+title: Dump User Lists
 ---
 
 <div role="navigation" class="navbar-default sidebar">
@@ -22,13 +22,13 @@ title: Dump Followers
 		<div class="col-lg-12">
 		 <div class="main_heading">
 				<div class="quicklinks">
-					<a href="{{site.baseurl}}/tsak/commands">Commands</a> | <a href="{{site.baseurl}}/tsak/dumpfollowers"> Dump Followers</a>
+					<a href="{{site.baseurl}}/tsak/commands">Commands</a> | <a href="{{site.baseurl}}/tsak/dump-user-lists">Dump User Lists</a>
 				</div>
  				
  				<p class="tableofcntnt">Table of Contents</p>
 				
 				<ul class="maincntnts">
-					<li><a href="dumpfollowers">Dump Followers</a>
+					<li><a href="dump-user-lists">Dump User Lists</a>
 
 						<ul class="maincntnts">
 							<li><a href="#1">Dump by Twitter Screen Name</a></li>
@@ -48,7 +48,7 @@ title: Dump Followers
 					</div>
 					<div class="ftns_def">
 						<code>
-							java -jar TSAK.jar tsak -consumerKey=XXXX -consumerSecret=XXXX -accessToken=XXXX -accessSecret=XXXX dumpFollowerIDs -uname ScreenName -o output.csv
+							java -jar TSAK.jar tsak -consumerKey=XXXXX -consumerSecret=XXXXX -accessToken=XXXXX -accessSecret=XXXXX dumpUserLists -uname screenName -o lists.txt
 						</code>
 					</div>
 
@@ -60,7 +60,7 @@ title: Dump Followers
 					<div class="ftns_def">
 						
 						<code>
-							java -jar TSAK.jar tsak dumpFollowerIDs -uname ScreenName -o output.csv
+							java -jar TSAK.jar tsak dumpUserLists -uname screenName -o lists.txt
 						</code>
 					</div>
 					
@@ -71,13 +71,13 @@ title: Dump Followers
 						<p>Twitter APP and User Keys. Please refer to <b>SETUP</b> page to see how to generate these four keys.</p>
 
 						<h4>-uname:</h4>
-						<p>Target User Twitter ScreenName.</p>
+						<p>The screen_name of the user for whom to return results for.</p>
 
 						<h4>-o:</h4>
-						<p>Name of the output file to which the target user follower will be dumped.</p>
+						<p>Name of the output file to which the Twitter Lists will be dumped of the specified user.</p>
 
 						<h4>Description:</h4>
-						<p>Based on provided Credentials, this command dumps a twitter user's followers ids, ScreenName, followers count, and friends count to a file. The number of followers are subjected to Twitter rate limits and cannot exceeds 75000/15min.</p>
+						<p>This command dumps all lists the authenticating or specified user subscribes to, including their own.</p>
 					
 					</div>
 
@@ -90,7 +90,7 @@ title: Dump Followers
 					</div>
 					<div class="ftns_def">
 						<code>
-							java -jar TSAK.jar tsak -consumerKey=XXXX -consumerSecret=XXXX -accessToken=XXXX -accessSecret=XXXX dumpFollowerIDs -uid 101010111 -o output.csv
+							java -jar TSAK.jar tsak -consumerKey=XXXXX -consumerSecret=XXXXX -accessToken=XXXXX -accessSecret=XXXXX dumpUserLists -uid 010101 -o lists.txt
 						</code>
 					</div>
 
@@ -102,7 +102,7 @@ title: Dump Followers
 					<div class="ftns_def">
 						
 						<code>
-							java -jar TSAK.jar tsak dumpFollowerIDs -uid 101010111 -o output.csv
+							java -jar TSAK.jar tsak dumpUserLists -uid 010101 -o lists.txt
 						</code>
 					</div>
 					
@@ -111,13 +111,13 @@ title: Dump Followers
 						<p>Twitter APP and User Keys. Please refer to <b>SETUP</b> page to see how to generate these four keys.</p>
 
 						<h4>-uid:</h4>
-						<p>Target User's Twitter ID.</p>
+						<p>The id the user for whom to return results for.</p>
 
 						<h4>-o:</h4>
-						<p>Name of the output file to which the target user follower will be dumped.</p>
+						<p>Name of the output file to which the Twitter Lists will be dumped of the specified user.</p>
 
 						<h4>Description:</h4>
-						<p>Based on provided Credentials, this command dumps a twitter user's followers ids, ScreenName, followers count, and friends count to a file. The number of followers are subjected to Twitter rate limits and cannot exceeds 75000/15min.</p>
+						<p>This command dumps all lists the authenticating or specified user subscribes to, including their own.</p>
 					</div>
 
 
