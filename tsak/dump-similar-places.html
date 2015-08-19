@@ -1,0 +1,76 @@
+---
+layout: twitter-swiss
+title: Dump Similar Places
+---
+
+<div role="navigation" class="navbar-default sidebar">
+  <div class="sidebar-nav navbar-collapse">
+   {% include left-sidebar.html %}
+  </div>
+                <!-- /.sidebar-collapse -->
+</div>
+            <!-- /.navbar-static-side -->
+</nav>
+<div id="page-wrapper" style="min-height: 389px;">
+	<div class="row">
+		<div class="col-lg-12">
+			<h1 class="page-header">{{page.title}}</h1>
+		</div>
+		<!-- /.col-lg-12 -->
+	</div>
+	<div class="row">
+		<div class="col-lg-12">
+		 <div class="main_heading">
+				<div class="quicklinks">
+					<a href="{{site.baseurl}}/tsak/commands">Commands</a> | <a href="{{site.baseurl}}/tsak/dump-similar-places">Dump Similar Places</a>
+				</div>
+					<div class="ftns_desp code_decp">
+						<h4>LONG FORMAT</h4>
+						<p>Reads Twitter credentials directly from command line arguments.</p>
+					</div>
+					<div class="ftns_def">
+						<code>
+							java -jar TSAK.jar tsak -consumerKey=XXXXX -consumerSecret=XXXXX -accessToken=XXXXX -accessSecret=XXXXX dumpSimilarPlaces -lat 51.5072 -long 0.1275 -pname london -o places.txt
+						</code>
+					</div>
+
+					<div class="ftns_desp code_decp">
+						<h4>SHORT FORMAT</h4>
+						<p>Reads Twitter credentials from tsak.properties file as pointed by TSAK_CONF ENV variable.</p>
+					</div>
+
+					<div class="ftns_def">
+						
+						<code>
+							java -jar TSAK.jar tsak dumpSimilarPlaces -lat 51.5072 -long 0.1275 -pname london -o places.txt
+						</code>
+					</div>
+					
+					<div class="ftns_desp">
+						<h4>Arguments:</h4>
+
+						<h4>XXXX:</h4>
+						<p>Twitter APP and User Keys. Please refer to <b>SETUP</b> page to see how to generate these four keys.</p>
+
+						<h4>-lat:</h4>
+						<p>Latitude of the place, for which the result will be returned.</p>
+						
+						<h4>-long:</h4>
+						<p>Longitude of the place, for which the result will be returned.</p>
+						
+						<h4>-pname:</h4>
+						<p>Name of the place, for which the result will be returned.</p>
+
+						<h4>-o:</h4>
+						<p>Name of the output file to which the result will be dumped.</p>
+
+						<h4>Description:</h4>
+						<p>This command will dump all the similar place to the specified place, of which details are provided.</p>
+					
+					</div>
+              </div>
+		</div>
+	</div>
+	
+</div>
+ 
