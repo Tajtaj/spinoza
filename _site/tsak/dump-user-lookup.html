@@ -8,7 +8,7 @@
     <meta charset="utf-8">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <title>COMMANDS</title>
+    <title>Dump User Lookup</title>
     <link rel="shortcut icon" type="image/png" href="favicon.png"/>
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/assets/bootstrap/dist/css/bootstrap.min.css">
@@ -97,30 +97,56 @@
 <div id="page-wrapper" style="min-height: 389px;">
 	<div class="row">
 		<div class="col-lg-12">
-			<h1 class="page-header">COMMANDS</h1>
+			<h1 class="page-header">Dump User Lookup</h1>
 		</div>
 		<!-- /.col-lg-12 -->
 	</div>
 	<div class="row">
 		<div class="col-lg-12">
-		   <div class="ftns_desp note_right">
-			<h4>NOTE:</h4>
-			<p>It is Highly recommended to go through <b>SETUP</b> page before using Commands.</p>
-		  </div>
-          <p class="tableofcntnt">Table of Contents</p>
-		  <ul class="maincntnts">
-			<li><a href="dumpfollowers">Dump Followers</a></li>
-			<li><a href="dumpfriends">Dump Friends</a></li>
-			<li><a href="dumpusertimeline">Dump Timeline</a></li>
-			<li><a href="dumphometimeline">Dump Home Timeline</a></li>
-			<li><a href="searchtweets">Search Tweets</a></li>
-			<li><a href="ratelimits">Rate Limits Analyzer</a></li>
-			<li><a href="get-own-tweets">Get Own Retweets</a></li>
-			<li><a href="dump-status-by-id">Dump status by id</a></li>
-			<li><a href="dump-retweeters-by-status-id">Dump retweeters by Status id</a></li>
-			<li><a href="dump-mention-timeline">Dump Mention TimeLine</a></li>
-			<li><a href="dump-user-lookup">Dump User Lookup</a></li>
-         </ul>
+		 <div class="main_heading">
+				<div class="quicklinks">
+					<a href="/tsak/commands">Commands</a> | <a href="/tsak/dump-user-lookup">Dump User Lookup</a>
+				</div>
+                    <p class="ftnnames" id="1">Dump by Twitter Screen Name:</p>
+					<div class="ftns_desp code_decp">
+						<h4>LONG FORMAT</h4>
+						<p>Reads Twitter credentials directly from command line arguments.</p>
+					</div>
+					<div class="ftns_def">
+						<code>
+							java -jar TSAK.jar tsak -consumerKey=XXXXX -consumerSecret=XXXXX -accessToken=XXXXX -accessSecret=XXXXX dumpUsersLookup -i ids.txt  -o lookup.txt
+						</code>
+					</div>
+
+					<div class="ftns_desp code_decp">
+						<h4>SHORT FORMAT</h4>
+						<p>Reads Twitter credentials from tsak.properties file as pointed by TSAK_CONF ENV variable.</p>
+					</div>
+
+					<div class="ftns_def">
+						
+						<code>
+							java -jar TSAK.jar tsak dumpUsersLookup -i ids.txt  -o lookup.txt
+						</code>
+					</div>
+					
+					<div class="ftns_desp">
+						<h4>Arguments:</h4>
+
+						<h4>XXXX:</h4>
+						<p>Twitter APP and User Keys. Please refer to <b>SETUP</b> page to see how to generate these four keys.</p>
+
+						<h4>-i:</h4>
+						<p>Path/Name of the file in containing id's/screen_names of the users to be Lookedup. </p>
+
+						<h4>-o:</h4>
+						<p>Name of the output file to which the Required Users will be dumped.</p>
+
+						<h4>Description:</h4>
+						<p>This command dumps the specified Users data whose ids/screen_name are contained in the input file.</p>
+					
+					</div>
+           </div>
 		</div>
 	</div>
 	
