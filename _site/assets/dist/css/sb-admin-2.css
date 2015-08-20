@@ -354,3 +354,9 @@ table.dataTable thead .sorting:after {
 ul.maincntnts li{
 	margin-bottom:8px;
 }
+.footer{
+	padding-top:15px;
+	padding-bottom:15px;
+	text-align:center;
+	border-top:1px solid #eee;
+}
