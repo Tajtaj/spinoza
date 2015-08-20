@@ -358,5 +358,7 @@ ul.maincntnts li{
 	padding-top:15px;
 	padding-bottom:15px;
 	text-align:center;
+}
+#page-wrapper{
 	border-top:1px solid #eee;
 }
