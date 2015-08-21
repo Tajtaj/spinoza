@@ -373,6 +373,11 @@ p.tableofcntnt{
     display:none;
 }
 .page-setup img{
-	max-width:100%;
-	height:auto;
+	border: 1px solid #dddddd;
+    box-shadow: 4px 4px 5px #333333;
+    height: auto;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    max-width: 100%;
+    width: 800px;
 }
