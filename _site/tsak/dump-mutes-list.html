@@ -8,7 +8,7 @@
     <meta charset="utf-8">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <title>COMMANDS</title>
+    <title>Dump Mutes List</title>
     <link rel="shortcut icon" type="image/png" href="favicon.png"/>
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/assets/bootstrap/dist/css/bootstrap.min.css">
@@ -97,54 +97,52 @@
 <div id="page-wrapper" style="min-height: 389px;">
 	<div class="row">
 		<div class="col-lg-12">
-			<h1 class="page-header">COMMANDS</h1>
+			<h1 class="page-header">Dump Mutes List</h1>
 		</div>
 		<!-- /.col-lg-12 -->
 	</div>
 	<div class="row">
 		<div class="col-lg-12">
-		   <div class="ftns_desp note_right">
-			<h4>NOTE:</h4>
-			<p>It is highly recommended to go through <b>SETUP</b> page before using commands.</p>
-		  </div>
-          <p class="tableofcntnt">Table of contents</p>
-		  <ul class="maincntnts">
-		    <li><a href="dump-account-setting">Dump account setting</a></li>
-			<li><a href="dumpfollowers">Dump followers</a></li>
-			<li><a href="dumpfriends">Dump friends</a></li>
-			<li><a href="dumpusertimeline">Dump timeline</a></li>
-			<li><a href="dumphometimeline">Dump home timeline</a></li>
-			<li><a href="searchtweets">Search tweets</a></li>
-			<li><a href="ratelimits">Rate limits analyzer</a></li>
-			<li><a href="get-own-tweets">Get own retweets</a></li>
-			<li><a href="dump-status-by-id">Dump status by id</a></li>
-			<li><a href="dump-retweeters-by-status-id">Dump retweeters by status id</a></li>
-			<li><a href="dump-mention-timeline">Dump mention timeline</a></li>
-			<li><a href="dump-user-lookup">Dump user lookup</a></li>
-			<li><a href="dump-block-users">Dump block users</a></li>
-			<li><a href="search-users">Search users</a></li>
-			<li><a href="show-friendship">Show friendship</a></li>
-			<li><a href="dump-friends-list">Dump friends list</a></li>
-			<li><a href="dump-followers-list">Dump followers list</a></li>
-			<li><a href="dump-favourites">Dump favourites</a></li>
-			<li><a href="dump-sugeested-user-catagories">Dump sugeested user catagories</a></li>
-			<li><a href="dump-user-suggestions">Dump user suggestions</a></li>
-			<li><a href="dump-member-suggestions">Dump member suggestions</a></li>
-			<li><a href="dump-user-lists">Dump user lists</a></li>
-			<li><a href="dump-list-statuses">Dump list statuses</a></li>
-			<li><a href="dump-saved-searches">Dump saved searches</a></li>
-			<li><a href="lookup-friendship">Lookup friendship</a></li>
-			<li><a href="dump-incoming-friendships">Dump incoming friendships</a></li>
-			<li><a href="dump-outgoing-friendships">Dump outgoing friendships</a></li>
-			<li><a href="dump-geo-details">Dump geo details</a></li>
-			<li><a href="dump-similar-places">Dump similar places</a></li>
-			<li><a href="search-place">Search place</a></li>
-			<li><a href="dump-available-trends">Dump available trends</a></li>
-			<li><a href="dump-place-trends">Dump place trends</a></li>
-			<li><a href="dump-closest-trends">Dump closest trends</a></li>
-			<li><a href="dump-mutes-ids">Dump mutes ids</a></li>
-			<li><a href="dump-mutes-list">Dump mutes list</a></li>
-         </ul>
+		 <div class="main_heading">
+				<div class="quicklinks">
+					<a href="/tsak/commands">Commands</a> | <a href="/tsak/dump-mutes-list">Dump Mutes List</a>
+				</div>
+					<div class="ftns_desp code_decp">
+						<h4>LONG FORMAT</h4>
+						<p>Reads Twitter credentials directly from command line arguments.</p>
+					</div>
+					<div class="ftns_def">
+						<code>
+							java -jar TSAK.jar tsak -consumerKey=XXXXX -consumerSecret=XXXXX -accessToken=XXXXX -accessSecret=XXXXX dumpMutesList -o ouput.txt
+						</code>
+					</div>
+
+					<div class="ftns_desp code_decp">
+						<h4>SHORT FORMAT</h4>
+						<p>Reads Twitter credentials from tsak.properties file as pointed by TSAK_CONF ENV variable.</p>
+					</div>
+
+					<div class="ftns_def">
+						
+						<code>
+							java -jar TSAK.jar tsak dumpMutesList -o output.txt
+						</code>
+					</div>
+					
+					<div class="ftns_desp">
+						<h4>Arguments:</h4>
+
+						<h4>XXXX:</h4>
+						<p>Twitter APP and User Keys. Please refer to <b>SETUP</b> page to see how to generate these four keys.</p>
+
+						<h4>-o:</h4>
+						<p>Name of the output file to which the mute users will be dumped.</p>
+
+						<h4>Description:</h4>
+						<p>This command dumps all users that are muted by the authenticating user.</p>
+					
+					</div>
+              </div>
 		</div>
 	</div>
 	
