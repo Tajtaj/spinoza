@@ -1,6 +1,6 @@
 # Site settings
 title: Spinoza
-baseurl: /spinoza
+baseurl: /
 exclude: ['README.md']
 # Build settings
 markdown: rdiscount
