@@ -124,7 +124,7 @@
 					</div>
 					<div class="ftns_def">
 						<code>
-							java -jar TSAK.jar tsak -consumerKey=XXXX -consumerSecret=XXXX -accessToken=XXXX -accessSecret=XXXX dumpFollowerIDs -uname ScreenName -o output.txt
+							java -jar TSAK.jar tsak -consumerKey=XXXX -consumerSecret=XXXX -accessToken=XXXX -accessSecret=XXXX dumpUserTimeLine -uname ScreenName -o output.txt
 						</code>
 					</div>
 
@@ -136,7 +136,7 @@
 					<div class="ftns_def">
 						
 						<code>
-							java -jar TSAK.jar tsak dumpFollowerIDs -uname ScreenName -o output.txt
+							java -jar TSAK.jar tsak dumpUserTimeLine -uname ScreenName -o output.txt
 						</code>
 					</div>
 					
@@ -166,7 +166,7 @@
 					</div>
 					<div class="ftns_def">
 						<code>
-							java -jar TSAK.jar tsak -consumerKey=XXXX -consumerSecret=XXXX -accessToken=XXXX -accessSecret=XXXX dumpFollowerIDs -uid 101010111 -o output.txt
+							java -jar TSAK.jar tsak -consumerKey=XXXX -consumerSecret=XXXX -accessToken=XXXX -accessSecret=XXXX dumpUserTimeLine -uid 101010111 -o output.txt
 						</code>
 					</div>
 
@@ -178,7 +178,7 @@
 					<div class="ftns_def">
 						
 						<code>
-							java -jar TSAK.jar tsak dumpFollowerIDs -uid 101010111 -o output.txt
+							java -jar TSAK.jar tsak dumpUserTimeLine -uid 101010111 -o output.txt
 						</code>
 					</div>
 					
@@ -193,7 +193,7 @@
 						<p>Name of the output file to which the target user's Statuses will be dumped.</p>
 
 						<h4>Description:</h4>
-						<p>Based on provided credentials, this command dumps a twitter user's statuses to a file. The number of dumped Tweets are subjected to Twitter rate limits and cannot exceeds 2700/15min.</p>
+						<p>Based on provided credentials, this command dumps a valid twitter user's statuses to a file. The number of dumped Tweets are subjected to Twitter rate limits.</p>
 					</div>
 
 
