@@ -123,8 +123,20 @@
 			</div>
 			<div class="step7">
 			 <strong>2 Environment setup:</strong>
-			 <p>2.1 on Windows:<br> Control Panel -> System and Security -> System -> Advanced system settings -> Environment variables -> New</p>
+			 <p>2.1 On Windows:<br> Control Panel -> System and Security -> System -> Advanced system settings -> Environment variables -> New</p>
 			 <img src="/assets/images/window.jpg">
+			</div>
+			<div class="step8">
+			 <p>2.2 On Linux:<br></p>
+			 <code>
+             vi /.bash_profile 
+			 </code>OR
+			 <code> vi /.bashrc
+             TSAK_CONF=PATH to tsak.propertise file
+			 </code>   (make sure directory have read permissions)
+             <code> source /.bash_profile </code> OR <code> source /.bashrc
+             echo $TSAK_CONF
+            </code>
 			</div>
 		</div>
 	</div>
