@@ -30,7 +30,7 @@ title: Search Users
 					</div>
 					<div class="ftns_def">
 						<code>
-							java -jar TSAK.jar tsak -consumerKey=XXXXX -consumerSecret=XXXXX -accessToken=XXXXX -accessSecret=XXXXX searchUsers -keywords="Key Word" -o Users.txt
+							java -jar TSAK.jar tsak -consumerKey=XXXXX -consumerSecret=XXXXX -accessToken=XXXXX -accessSecret=XXXXX searchUsers -keywords="Key Word" -o users.txt
 						</code>
 					</div>
 
@@ -42,7 +42,7 @@ title: Search Users
 					<div class="ftns_def">
 						
 						<code>
-							java -jar TSAK.jar tsak dumpBlockList -o blocklists.txt
+							java -jar TSAK.jar tsak searchUsers -keywords="Key Word" -o users.txt
 						</code>
 					</div>
 					
@@ -53,13 +53,13 @@ title: Search Users
 						<p>Twitter APP and User Keys. Please refer to <b>SETUP</b> page to see how to generate these four keys.</p>
 
 						<h4>-keywords:</h4>
-						<p>Search Twitter users whose names or screen names contain these keywords.</p>
+						<p>Key word/s that are the Name or ScreenName of the Twitter users.</p>
 
 						<h4>-o:</h4>
 						<p>Name of the output file to which the Result Users will be dumped.</p>
 
 						<h4>Description:</h4>
-						<p>This command dumps the users list whose names or screen names matches the keywords.</p>
+						<p>This command dumps the twitter users to the given output file. whose names or screen names matches the keywords. The number of retrieved twitter users are subjected to Twitter rate limits.</p>
 					
 					</div>
              </div>
