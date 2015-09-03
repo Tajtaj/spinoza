@@ -1,6 +1,6 @@
 ---
 layout: twitter-swiss
-title: Dump Friends List
+title: Dump Friends
 ---
 
 <div role="navigation" class="navbar-default sidebar">
@@ -23,13 +23,13 @@ title: Dump Friends List
 		 <div class="main_contents">
 			<div class="main_heading">
 				<div class="quicklinks">
-					<a href="{{site.baseurl}}/tsak/commands">Commands</a> | <a href="{{site.baseurl}}/tsak/dumpfriends"> Dump Friends List</a>
+					<a href="{{site.baseurl}}/tsak/commands">Commands</a> | <a href="{{site.baseurl}}/tsak/dumpfriends"> Dump Friends</a>
 				</div>
  				
  				<p class="tableofcntnt">Table of contents</p>
 				
 				<ul class="maincntnts">
-					<li><a href="dumpfriends">Dump Friends List</a>
+					<li><a href="dumpfriends">Dump Friends</a>
 
 						<ul class="maincntnts">
 							<li><a href="#1">Dump by Twitter Screen Name</a></li>
@@ -49,7 +49,7 @@ title: Dump Friends List
 					</div>
 					<div class="ftns_def">
 						<code>
-							java -jar TSAK.jar tsak -consumerKey=XXXX -consumerSecret=XXXX -accessToken=XXXX -accessSecret=XXXX dumpFriendIDs -uname ScreenName -o output.csv
+							java -jar TSAK.jar tsak -consumerKey=XXXX -consumerSecret=XXXX -accessToken=XXXX -accessSecret=XXXX dumpFriendIDs -uname ScreenName -o friends.csv
 						</code>
 					</div>
 
@@ -61,7 +61,7 @@ title: Dump Friends List
 					<div class="ftns_def">
 						
 						<code>
-							java -jar TSAK.jar tsak dumpFriendIDs -uname ScreenName -o output.csv
+							java -jar TSAK.jar tsak dumpFriendIDs -uname ScreenName -o friends.csv
 						</code>
 					</div>
 					
@@ -72,13 +72,13 @@ title: Dump Friends List
 						<p>Twitter APP and User Keys. Please refer to <b>SETUP</b> page to see how to generate these four keys.</p>
 
 						<h4>-uname:</h4>
-						<p>Target User Twitter ScreenName.</p>
+						<p>Target User's Twitter ScreenName.</p>
 
 						<h4>-o:</h4>
-						<p>Name of the output file to which the target user follower will be dumped.</p>
+						<p>Name of the output file to which the target user's friends will be dumped.</p>
 
 						<h4>Description:</h4>
-						<p>Based on provided Credentials, this command dumps a twitter user's friends ids, screen name, followers count, and friends count to the provided output file. The number of friends id, ScreenName, followers count, friends count are subjected to Twitter rate limits.</p>
+						<p>This command dumps a twitter user's friends IDs, screen name, followers count, and friends count to the given output file. The number of friend IDs are subjected to Twitter rate limits.</p>
 					
 					</div>
 
